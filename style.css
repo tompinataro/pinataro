@@ -43,3 +43,7 @@ img {
 .button:hover {
     background-color: #2a0404;
 }
+.countdown {
+    font-size: 36px;
+    margin-top: 20px;
+}
