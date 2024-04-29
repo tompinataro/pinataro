@@ -15,7 +15,7 @@ body {
 
 .skills-section {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .skills-section h2 {
@@ -23,7 +23,8 @@ body {
 }
 
 .skills-section ul {
-    margin-top: 5px;
+    margin-top: -10px;
+    color: #555;
 }
 
 h1, h2, h3 {
