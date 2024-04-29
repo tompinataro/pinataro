@@ -12,6 +12,20 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.skills-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-section h2 {
+    margin-top: 0;
+}
+
+.skills-section ul {
+    margin-top: 5px;
+}
+
 h1, h2, h3 {
     font-family: 'Monotype Corsiva';
     color: #742103;
