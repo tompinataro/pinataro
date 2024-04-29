@@ -47,3 +47,15 @@ img {
     font-size: 36px;
     margin-top: 20px;
 }
+
+/* style.css */
+
+/* Apply margin-bottom to headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px; /* Adjust this value as needed */
+}
+
+/* Apply margin-top to paragraphs */
+p {
+    margin-top: 10px; /* Adjust this value as needed */
+}
