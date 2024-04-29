@@ -49,15 +49,11 @@ img {
     margin-bottom: 20px;
 }
 
-/* style.css */
-
-/* Apply margin-bottom to headings */
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 2px; /* Adjust this value as needed */
+    margin-bottom: 2px; 
 }
 
-/* Apply margin-top to paragraphs */
 p {
     margin-top: 2px;
-    margin-bottom: 2px; /* Adjust this value as needed */
+    margin-bottom: 2px;
 }
