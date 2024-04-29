@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+
+<html>
+<head> 
+  <link rel="stylesheet" href="style.css"/>
+</head>
+  
+<body>
+  <div class="header">
+    <h1> Pizza Shoppe 061721</h1>
+  </div>
+    
+    
+  <div>  
+  <img src="https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/phut_0.jpg?itok=h30EAnkk"/>   
+
+    <p> Come eat some pizza! </p>
+    
+    
+   <ol>
+    <li> Cheese </li>
+    <li> Sausage </li>
+    </ol>
+  </div>  
+    
+  <div class="footer">
+    <h6> Copyright TxP 2021</h6>
+  </div>
+  
+  </body>
+</html>
+
+  
+  
