@@ -53,11 +53,11 @@ img {
 
 /* Apply margin-bottom to headings */
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1px; /* Adjust this value as needed */
+    margin-bottom: 2px; /* Adjust this value as needed */
 }
 
 /* Apply margin-top to paragraphs */
 p {
-    margin-top: 1px;
-    margin-bottom: 1px; /* Adjust this value as needed */
+    margin-top: 2px;
+    margin-bottom: 2px; /* Adjust this value as needed */
 }
