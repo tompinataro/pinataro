@@ -46,7 +46,7 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-    margin-top: 1px;
+    margin-top: 10px;
     margin-bottom: 1px;
 }
 .button {
