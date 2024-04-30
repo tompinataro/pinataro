@@ -45,7 +45,8 @@ img {
     max-width: 150px;
     height: auto;
     display: block;
-    margin: 5px auto;
+    margin-top: 5px auto;
+    margin-bottom: 1px;
 }
 .button {
     display: inline-block;
