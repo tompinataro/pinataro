@@ -1,6 +1,10 @@
 
 body {
-    background-color: red;
+  font-family: 'Arial', sans-serif;
+  background-color: red;
+  padding: 120px;
+  margin: 500;
+  text-align: center;
   }
   
   h1{
