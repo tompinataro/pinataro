@@ -1,11 +1,10 @@
-//
 //  ContentView.swift
 //  CodeHistory
 //
 //  re- Created by Tom Pinataro on 1/4/22.
 //
 
-import SwiftUI
+// import SwiftUI
 
 struct ContentView: View {
     
@@ -79,4 +78,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
