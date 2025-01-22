@@ -6,29 +6,27 @@ events {
 
 http {
     server {
-        listen <%= ENV["PORT"] %>; # Heroku dynamically assigns the port
+        # Heroku's dynamic port assignment
+        listen <%= ENV["PORT"] %>;
 
-        # Root directory for the static site
+        # Serve static files from /app
         root /app;
 
-        # Serve the default index.html
+        # Default route to index.html
         location / {
             index index.html;
             try_files $uri /index.html;
         }
 
-        # Force HTTPS (optional, recommended)
+        # Optional: Force HTTPS
         if ($http_x_forwarded_proto != "https") {
             return 301 https://$host$request_uri;
         }
 
-        # Cache static assets (optional)
+        # Optional: Cache static assets
         location ~* \.(?:ico|css|js|gif|jpe?g|png|woff2?|eot|ttf|svg|otf)$ {
             expires max;
             add_header Cache-Control "public";
         }
-
-        # Custom error pages (optional)
-        error_page 404 /404.html;
     }
 }
