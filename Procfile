@@ -1,1 +1,1 @@
-web: nginx -g 'daemon off;'
+web: http-server ./Public -p $PORT
