@@ -1,5 +1,4 @@
-This static "Resume" website was created as a requirement 
-for my application for admission to Prime Digital Academy.
+This static "Resume" project was created as a requirement for my application for admission to Prime Digital Academy.
 
 
 heroku buildpacks:set heroku/nodejs
