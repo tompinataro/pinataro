@@ -4,44 +4,48 @@ body {
     padding: 20px;
     margin: 0;
     text-align: center;
-}
-.resume {
+  }
+  
+  .resume {
     background-color: #d3aeae;
-    padding:10px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 0 auto;
-}
-
-.skills-section {
+  }
+  
+  .skills-section {
     margin-top: 5px;
     margin-bottom: 0px;
-}
-
-.skills-section h1, h2, h3 {
+  }
+  
+  .skills-section h1, h2, h3 {
     margin-top: 5px;
     margin-bottom: 0px;
     color: #742103;
-}
-
-.skills-section ul {
+  }
+  
+  .skills-section ul {
     margin-top: 0px;
     color: #555;
-}
-
-h1, h2, h3 {
+  }
+  
+  h1, h2, h3 {
     font-family: 'Monotype Corsiva';
     color: #742103;
-}
-p {
+  }
+  
+  p {
     color: #555;
-}
-a {
+  }
+  
+  a {
     color: #742103;
     text-decoration: underline;
-}
-img {
+  }
+  
+  img {
     border-radius: 50%;
     max-width: 150px;
     height: auto;
@@ -49,8 +53,9 @@ img {
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-.button {
+  }
+  
+  .button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #742103;
@@ -58,29 +63,32 @@ img {
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-}
-
-.button:hover {
+  }
+  
+  .button:hover {
     background-color: #2a0404;
-}
-.countdown {
+  }
+  
+  .countdown {
     font-size: 36px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 0px; 
-}
-
-p {
+  }
+  
+  p {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-}
-
-.icon-row {
+  }
+  
+  /* === ICON ROW === */
+  
+  .icon-row {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -97,7 +105,7 @@ p {
     font-size: 26px;
   }
   
-  /* Bounce + plump animation */
+  /* === Bounce + plump animation === */
   @keyframes bouncePlump {
     0% {
       transform: scale(1) translateY(0);
@@ -114,7 +122,7 @@ p {
     transition: color 0.2s ease;
   }
   
-  /* Per-icon base colors */
+  /* === Per-icon base colors === */
   .icon-row a .fa-instagram {
     color: #E4405F;
   }
@@ -137,7 +145,7 @@ p {
     color: #742103;
   }
   
-  /* Per-icon hover colors */
+  /* === Per-icon hover colors + animation === */
   .icon-row a:hover .fa-instagram {
     color: #C13584;
     animation: bouncePlump 0.4s ease;
@@ -166,19 +174,33 @@ p {
     color: #4a1501;
     animation: bouncePlump 0.4s ease;
   }
-
-  @media (max-width: 480px) {
+  
+  /* === MOBILE OPTIMIZATION === */
+  
+  @media (max-width: 600px) {
     .icon-row {
       flex-wrap: wrap;
-      gap: 15px;
-      padding: 10px 0;
+      gap: 10px;
+      justify-content: center;
     }
   
-    .icon-row a i {
+    .icon-row i {
       font-size: 24px;
     }
   
-    .icon-row i.fa-phone {
-      font-size: 22px;
+    .button {
+      display: inline-block;
+      width: auto;
+      padding: 10px 20px;
+      margin: 8px auto;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .resume img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
   }
