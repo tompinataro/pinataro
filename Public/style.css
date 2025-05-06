@@ -167,4 +167,18 @@ p {
     animation: bouncePlump 0.4s ease;
   }
 
+  @media (max-width: 480px) {
+    .icon-row {
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px 0;
+    }
   
+    .icon-row a i {
+      font-size: 24px;
+    }
+  
+    .icon-row i.fa-phone {
+      font-size: 22px;
+    }
+  }
