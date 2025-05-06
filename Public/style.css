@@ -79,6 +79,7 @@ p {
     margin-bottom: 0px;
     margin-left: 0px;
 }
+
 .icon-row {
     display: flex;
     gap: 20px;
@@ -96,7 +97,7 @@ p {
     font-size: 26px;
   }
   
-  /* Bounce keyframes */
+  /* Bounce + plump animation */
   @keyframes bouncePlump {
     0% {
       transform: scale(1) translateY(0);
@@ -109,13 +110,61 @@ p {
     }
   }
   
-  /* Smooth color transitions */
   .icon-row a i {
     transition: color 0.2s ease;
   }
   
-  /* Combined bounce + plump */
-  .icon-row a:hover i {
-    animation: bouncePlump 0.4s ease;
+  /* Per-icon base colors */
+  .icon-row a .fa-instagram {
+    color: #E4405F;
+  }
+  .icon-row a .fa-linkedin {
+    color: #0A66C2;
+  }
+  .icon-row a .fa-envelope {
+    color: #D44638;
+  }
+  .icon-row a .fa-user-plus {
+    color: #4CAF50;
+  }
+  .icon-row a .fa-github {
+    color: #333;
+  }
+  .icon-row a .fa-calendar-alt {
+    color: #0069ff;
+  }
+  .icon-row a .fa-phone {
     color: #742103;
   }
+  
+  /* Per-icon hover colors */
+  .icon-row a:hover .fa-instagram {
+    color: #C13584;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-linkedin {
+    color: #004182;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-envelope {
+    color: #a83227;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-user-plus {
+    color: #2e7d32;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-github {
+    color: #000000;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-calendar-alt {
+    color: #004bcc;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-phone {
+    color: #4a1501;
+    animation: bouncePlump 0.4s ease;
+  }
+
+  
