@@ -79,3 +79,29 @@ p {
     margin-bottom: 0px;
     margin-left: 0px;
 }
+
+.icon-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .icon-row i {
+    font-size: 28px;
+    vertical-align: middle;
+  }
+
+  .icon-row i.fa-phone {
+    font-size: 26px;
+  }
+
+  .icon-row a i {
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .icon-row a:hover i {
+    transform: scale(1.2);
+    color: #742103; /* Or pick a unified hover color, or let each stay unique */
+  }
