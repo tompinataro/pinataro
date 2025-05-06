@@ -172,7 +172,7 @@ body {
   }
   .icon-row a:hover .fa-phone {
     color: #4a1501;
-    animation: bouncePlump 0.4s ease;
+    animation: bouncePlump 0.4s ease ;
   }
   
   /* === MOBILE OPTIMIZATION === */
