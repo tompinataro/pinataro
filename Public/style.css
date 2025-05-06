@@ -180,7 +180,7 @@ body {
   @media (max-width: 600px) {
     .icon-row {
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 18px;
       justify-content: center;
     }
   
