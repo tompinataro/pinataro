@@ -1,1 +1,1 @@
-web: http-server ./Public -p $PORT
+web: http-server ./public -p $PORT
