@@ -4,7 +4,7 @@
   "description": "A resume project",
   "main": "index.js",
   "scripts": {
-    "start": "http-server ./Public -p $PORT"
+    "start": "http-server ./public -p $PORT"
   },
   "dependencies": {
     "http-server": "^0.12.3"
