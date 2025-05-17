@@ -1,0 +1,219 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a0404;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .resume {
+    background-color: #d3aeae;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .skills-section {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .skills-section h1, h2, h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #742103;
+  }
+  
+  .skills-section ul {
+    margin-top: 0px;
+    color: #555;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Monotype Corsiva';
+    color: #742103;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  a {
+    color: #742103;
+    text-decoration: underline;
+  }
+  
+  img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #742103;
+    color: #d3aeae;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2a0404;
+  }
+  
+  .countdown {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 0px; 
+  }
+  
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  
+  /* === ICON ROW === */
+  
+  .icon-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .icon-row i {
+    font-size: 28px;
+    vertical-align: middle;
+  }
+  
+  .icon-row i.fa-phone {
+    font-size: 26px;
+  }
+  
+  /* === Bounce + plump animation === */
+  @keyframes bouncePlump {
+    0% {
+      transform: scale(1) translateY(0);
+    }
+    50% {
+      transform: scale(1.2) translateY(-5px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  .icon-row a i {
+    transition: color 0.2s ease;
+  }
+  
+  /* === Per-icon base colors === */
+  .icon-row a .fa-instagram {
+    color: #E4405F;
+  }
+  .icon-row a .fa-linkedin {
+    color: #0A66C2;
+  }
+  .icon-row a .fa-envelope {
+    color: #D44638;
+  }
+  .icon-row a .fa-user-plus {
+    color: #4CAF50;
+  }
+  .icon-row a .fa-github {
+    color: #333;
+  }
+  .icon-row a .fa-calendar-alt {
+    color: #0069ff;
+  }
+  .icon-row a .fa-phone {
+    color: #742103;
+  }
+  
+  /* === Per-icon hover colors + animation === */
+  .icon-row a:hover .fa-instagram {
+    color: #C13584;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-linkedin {
+    color: #004182;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-envelope {
+    color: #a83227;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-user-plus {
+    color: #2e7d32;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-github {
+    color: #000000;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-calendar-alt {
+    color: #004bcc;
+    animation: bouncePlump 0.4s ease;
+  }
+  .icon-row a:hover .fa-phone {
+    color: #4a1501;
+    animation: bouncePlump 0.4s ease ;
+  }
+  
+  /* === MOBILE OPTIMIZATION === */
+  
+  @media (max-width: 600px) {
+    .icon-row {
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+    }
+  
+    .icon-row i {
+      font-size: 24px;
+    }
+  
+    .button {
+      display: inline-block;
+      width: auto;
+      padding: 10px 20px;
+      margin: 8px auto;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .resume img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  .pdf-link {
+    display: block;
+    font-size: 0.95em;
+    text-align: center;
+    color: #333;
+    margin-top: 4px;
+    text-decoration: none;
+  }
+  .pdf-link:hover {
+    text-decoration: underline;
+    color: #742103;
+  }
