@@ -1,15 +1,15 @@
 {
-  "name": "resume",
+  "name": "pinataro-site",
   "version": "1.0.0",
-  "description": "A resume project",
-  "main": "index.js",
+  "description": "Static portfolio site for Tom Pinataro",
+  "main": "server.js",
   "scripts": {
-    "start": "http-server ./public -p $PORT"
-  },
-  "dependencies": {
-    "http-server": "^0.12.3"
+    "start": "node server.js"
   },
   "engines": {
-    "node": "20.6.1"
+    "node": ">=14.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
