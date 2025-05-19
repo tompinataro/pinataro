@@ -217,3 +217,15 @@ body {
     text-decoration: underline;
     color: #742103;
   }
+  .logo-link {
+  display: inline-block;
+  background-color: #742103;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.logo-link:hover img {
+  transform: scale(1.2);
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: brightness(1.2);
+}
