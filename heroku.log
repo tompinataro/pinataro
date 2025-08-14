@@ -1,0 +1,129 @@
+2025-08-13T19:41:36.943407+00:00 app[web.1]: at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+2025-08-13T19:41:36.943407+00:00 app[web.1]: at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+2025-08-13T19:41:36.943407+00:00 app[web.1]: at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+2025-08-13T19:41:36.943408+00:00 app[web.1]: at Module._load (node:internal/modules/cjs/loader:1219:37)
+2025-08-13T19:41:36.943408+00:00 app[web.1]: at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-08-13T19:41:36.943408+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+2025-08-13T19:41:36.943409+00:00 app[web.1]: at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2025-08-13T19:41:36.943409+00:00 app[web.1]: at node:internal/main/run_main_module:33:47 {
+2025-08-13T19:41:36.943409+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2025-08-13T19:41:36.943410+00:00 app[web.1]: requireStack: []
+2025-08-13T19:41:36.943410+00:00 app[web.1]: }
+2025-08-13T19:41:36.943410+00:00 app[web.1]: 
+2025-08-13T19:41:36.943410+00:00 app[web.1]: Node.js v24.5.0
+2025-08-13T19:41:37.027071+00:00 heroku[web.1]: Process exited with status 1
+2025-08-13T19:41:37.050295+00:00 heroku[web.1]: State changed from starting to crashed
+2025-08-13T19:41:37.169148+00:00 heroku[web.1]: State changed from crashed to starting
+2025-08-13T19:41:43.094561+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-08-13T19:41:43.818104+00:00 app[web.1]: 
+2025-08-13T19:41:43.818128+00:00 app[web.1]: > pinataro-site@1.0.0 start
+2025-08-13T19:41:43.818128+00:00 app[web.1]: > node server.js
+2025-08-13T19:41:43.818129+00:00 app[web.1]: 
+2025-08-13T19:41:43.847005+00:00 app[web.1]: node:internal/modules/cjs/loader:1413
+2025-08-13T19:41:43.847006+00:00 app[web.1]: throw err;
+2025-08-13T19:41:43.847007+00:00 app[web.1]: ^
+2025-08-13T19:41:43.847007+00:00 app[web.1]: 
+2025-08-13T19:41:43.847008+00:00 app[web.1]: Error: Cannot find module '/app/server.js'
+2025-08-13T19:41:43.847009+00:00 app[web.1]: at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+2025-08-13T19:41:43.847009+00:00 app[web.1]: at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+2025-08-13T19:41:43.847009+00:00 app[web.1]: at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+2025-08-13T19:41:43.847010+00:00 app[web.1]: at Module._load (node:internal/modules/cjs/loader:1219:37)
+2025-08-13T19:41:43.847010+00:00 app[web.1]: at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-08-13T19:41:43.847010+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+2025-08-13T19:41:43.847011+00:00 app[web.1]: at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2025-08-13T19:41:43.847011+00:00 app[web.1]: at node:internal/main/run_main_module:33:47 {
+2025-08-13T19:41:43.847012+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2025-08-13T19:41:43.847012+00:00 app[web.1]: requireStack: []
+2025-08-13T19:41:43.847012+00:00 app[web.1]: }
+2025-08-13T19:41:43.847012+00:00 app[web.1]: 
+2025-08-13T19:41:43.847013+00:00 app[web.1]: Node.js v24.5.0
+2025-08-13T19:41:43.916494+00:00 heroku[web.1]: Process exited with status 1
+2025-08-13T19:41:43.944919+00:00 heroku[web.1]: State changed from starting to crashed
+2025-08-13T19:42:04.346329+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/wp-content/plugins/hellopress/wp_filemanager.php" host=pinataro.com request_id=9e469c95-4699-2865-0b3e-58c450549c76 fwd="" dyno= connect=0ms service=0ms status=499 bytes=567 protocol=http1.1 tls=false
+2025-08-13T19:45:22.009085+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=pinataro-e96bc8c94097.herokuapp.com request_id=c2414958-3aa9-1352-6703-b62f8da0924d fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T19:46:37.894183+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=pinataro-e96bc8c94097.herokuapp.com request_id=742c5458-0518-a5b0-7260-17b2cf8e47d9 fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T19:52:54.074709+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=pinataro-e96bc8c94097.herokuapp.com request_id=cb901269-c663-1a0c-f094-7607e11cd859 fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T19:54:09.416416+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=pinataro-e96bc8c94097.herokuapp.com request_id=a96a495c-521b-a501-dd96-6a50e05bbc60 fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T19:57:48.536651+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/" host=pinataro.com request_id=3e2f1dae-dcc1-4f88-626e-26af10042ca5 fwd="" dyno= connect=0ms service=0ms status=499 bytes=567 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T19:59:03.608847+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=pinataro.com request_id=0aaf73b6-aab4-ec68-8f42-7d9db2a1e8ec fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=false
+2025-08-13T20:00:19.310460+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=pinataro.com request_id=1dd8720e-6216-12b4-9af1-84cc6f7f378c fwd="" dyno= connect=0ms service=0ms status=503 bytes=567 protocol=http1.1 tls=false
+2025-08-13T20:03:52.722148+00:00 heroku[web.1]: State changed from crashed to starting
+2025-08-13T20:03:56.745510+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-08-13T20:03:57.525146+00:00 app[web.1]: 
+2025-08-13T20:03:57.525169+00:00 app[web.1]: > pinataro-site@1.0.0 start
+2025-08-13T20:03:57.525170+00:00 app[web.1]: > node server.js
+2025-08-13T20:03:57.525170+00:00 app[web.1]: 
+2025-08-13T20:03:57.550983+00:00 app[web.1]: node:internal/modules/cjs/loader:1413
+2025-08-13T20:03:57.550985+00:00 app[web.1]: throw err;
+2025-08-13T20:03:57.550996+00:00 app[web.1]: ^
+2025-08-13T20:03:57.550996+00:00 app[web.1]: 
+2025-08-13T20:03:57.550997+00:00 app[web.1]: Error: Cannot find module '/app/server.js'
+2025-08-13T20:03:57.550998+00:00 app[web.1]: at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+2025-08-13T20:03:57.550998+00:00 app[web.1]: at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+2025-08-13T20:03:57.550998+00:00 app[web.1]: at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+2025-08-13T20:03:57.550999+00:00 app[web.1]: at Module._load (node:internal/modules/cjs/loader:1219:37)
+2025-08-13T20:03:57.550999+00:00 app[web.1]: at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-08-13T20:03:57.550999+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+2025-08-13T20:03:57.551000+00:00 app[web.1]: at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2025-08-13T20:03:57.551000+00:00 app[web.1]: at node:internal/main/run_main_module:33:47 {
+2025-08-13T20:03:57.551001+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2025-08-13T20:03:57.551001+00:00 app[web.1]: requireStack: []
+2025-08-13T20:03:57.551002+00:00 app[web.1]: }
+2025-08-13T20:03:57.551002+00:00 app[web.1]: 
+2025-08-13T20:03:57.551002+00:00 app[web.1]: Node.js v24.5.0
+2025-08-13T20:03:57.637196+00:00 heroku[web.1]: Process exited with status 1
+2025-08-13T20:03:57.659564+00:00 heroku[web.1]: State changed from starting to crashed
+2025-08-13T20:06:58.650936+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/sitemap.xml" host=pinataro.com request_id=7687c83f-59b1-9968-bbcc-7e4267e6139a fwd="" dyno= connect=0ms service=0ms status=499 bytes=567 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:09:45.000000+00:00 app[api]: Build started by user tompinataro@gmail.com
+2025-08-13T20:10:04.597972+00:00 app[api]: Release v48 created by user tompinataro@gmail.com
+2025-08-13T20:10:04.597972+00:00 app[api]: Deploy 9c608803 by user tompinataro@gmail.com
+2025-08-13T20:10:05.000000+00:00 app[api]: Build succeeded
+2025-08-13T20:10:05.480807+00:00 heroku[web.1]: State changed from crashed to starting
+2025-08-13T20:10:09.091605+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-08-13T20:10:09.648013+00:00 app[web.1]: Serving on port 26956
+2025-08-13T20:10:09.676145+00:00 heroku[web.1]: State changed from starting to up
+2025-08-13T20:10:26.741793+00:00 heroku[router]: at=info method=GET path="/" host=pinataro-e96bc8c94097.herokuapp.com request_id=107212f4-fe18-ee81-939a-c2a83c755755 fwd="73.65.28.64" dyno=web.1 connect=0ms service=6ms status=200 bytes=1994 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:10:26.845005+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro-e96bc8c94097.herokuapp.com request_id=934883fa-17d7-7b90-f828-a4b1b2c3e636 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=3732 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:10:26.855746+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro-e96bc8c94097.herokuapp.com request_id=87b5ab53-d5d0-3418-c441-70c96a8cf1e9 fwd="73.65.28.64" dyno=web.1 connect=0ms service=2ms status=200 bytes=74762 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:10:27.380344+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=pinataro-e96bc8c94097.herokuapp.com request_id=e51b04ed-ec19-1e17-2658-42ed81955e67 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=4689 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:10:35.105702+00:00 heroku[router]: at=info method=GET path="/NewPortfolio.html" host=pinataro-e96bc8c94097.herokuapp.com request_id=da95533f-b683-1c27-1d19-09f4e076b9b9 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=2488 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:10:35.205647+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro-e96bc8c94097.herokuapp.com request_id=108f4fc3-5b98-48c4-7d60-1821aa64c564 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:10:35.262739+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro-e96bc8c94097.herokuapp.com request_id=d9f38f0c-594d-8e48-dcb3-c44f9caad09d fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:10:39.242451+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro-e96bc8c94097.herokuapp.com request_id=6206149c-3d1d-0a6e-1c06-193b88777292 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=true tls_version=unknown
+2025-08-13T20:11:04.907142+00:00 heroku[router]: at=info method=GET path="/" host=pinataro.com request_id=eed52709-350f-7d8c-a88a-8bf83f2f291c fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=1994 protocol=http1.1 tls=false
+2025-08-13T20:11:04.984564+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro.com request_id=a748a417-dee5-8e84-2e87-48d8b89ea873 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=3732 protocol=http1.1 tls=false
+2025-08-13T20:11:04.997704+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro.com request_id=fc5d1d76-76bd-4423-0896-0c674a8088d1 fwd="73.65.28.64" dyno=web.1 connect=0ms service=2ms status=200 bytes=74762 protocol=http1.1 tls=false
+2025-08-13T20:11:05.364943+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=pinataro.com request_id=7be5c8f0-598b-1cda-c7ee-369026280d66 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=4689 protocol=http1.1 tls=false
+2025-08-13T20:11:07.878859+00:00 heroku[router]: at=info method=GET path="/NewPortfolio.html" host=pinataro.com request_id=1fd25d90-206c-b18b-4ba5-099f597f42ec fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=2488 protocol=http1.1 tls=false
+2025-08-13T20:11:07.957285+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro.com request_id=dd8cbc38-4829-d1f2-62d3-8a02e26836fa fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http1.1 tls=false
+2025-08-13T20:11:07.964812+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro.com request_id=1de907d6-17e8-eae6-1ce5-ec99dbe155a3 fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http1.1 tls=false
+2025-08-13T20:17:27.096024+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro.com request_id=2a223f3f-4813-cf44-1728-0218f639dc93 fwd="73.65.28.64" dyno=web.1 connect=0ms service=2ms status=200 bytes=74762 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:10.515765+00:00 heroku[router]: at=info method=GET path="/NewPortfolio.html" host=pinataro.com request_id=8adf2899-5cb8-92a0-4676-cdc634171f67 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=2488 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:10.639524+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro.com request_id=a467fe6d-7aaf-bac3-5b3c-e322666e08e2 fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:10.635562+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro.com request_id=4fd85d3a-827a-dc0d-7327-4ca6d22e700f fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=3732 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:10.736479+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=pinataro.com request_id=17020fa3-5aa5-c480-24ac-348b04243a9b fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=4689 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:24.678651+00:00 heroku[router]: at=info method=GET path="/NewPortfolio.html" host=pinataro.com request_id=5e392cd9-e52c-fe4b-8bb6-18e21d4c165f fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:24.752807+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro.com request_id=6c6627b1-6d8a-7e04-9ff7-532b88713ca0 fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:24.758992+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro.com request_id=53a59800-0a90-dddb-f368-40457fbf2eb9 fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:24.831195+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=pinataro.com request_id=4c61ce64-b111-3666-bdc3-1664a65d9755 fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:35.102040+00:00 heroku[router]: at=info method=GET path="/" host=pinataro.com request_id=5ed4d109-51ca-6923-30a4-1561cc305a13 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=1994 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:35.187384+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro.com request_id=34d0f7fb-381d-c6b2-9415-fd0065f51e26 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:35.188144+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro.com request_id=4ebb9ac4-1253-612d-f2ce-6e792bbe63c5 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:47.612246+00:00 heroku[router]: at=info method=GET path="/NewPortfolio.html" host=pinataro.com request_id=946aca07-4a07-45dc-f06c-8145d96a8609 fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:47.690302+00:00 heroku[router]: at=info method=GET path="/style.css" host=pinataro.com request_id=7b4ac3e5-fd18-28cf-d415-dfa6110ebc3e fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:21:47.695089+00:00 heroku[router]: at=info method=GET path="/images/IMG_0391.jpg" host=pinataro.com request_id=9fa2fb16-a4d3-04d8-dc2f-6a2825c575f5 fwd="73.65.28.64" dyno=web.1 connect=0ms service=0ms status=304 bytes=0 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:22:18.611857+00:00 heroku[router]: at=info method=GET path="/Case Studies/BCX_100_Day_Challenge_Case_Study_Tom_Pinataro.pdf" host=pinataro.com request_id=fa1e96c2-9daf-d2ef-8627-a573b32cfbfe fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=43634 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:22:19.002512+00:00 heroku[router]: at=info method=GET path="/Case Studies/BCX_100_Day_Challenge_Case_Study_Tom_Pinataro.pdf" host=pinataro.com request_id=8563e5ad-ca3b-4cb0-0881-816cfd733f97 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=206 bytes=1025 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:22:19.007450+00:00 heroku[router]: at=info method=GET path="/Case Studies/BCX_100_Day_Challenge_Case_Study_Tom_Pinataro.pdf" host=pinataro.com request_id=0f481e12-59cf-f186-1e1e-d66e80aff1c3 fwd="73.65.28.64" dyno=web.1 connect=0ms service=1ms status=200 bytes=43634 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:22:41.420622+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/images/Bloom_Steward_Demo.mp4" host=pinataro.com request_id=a30a4996-e810-dea4-c8cd-5f2494983b9a fwd="73.65.28.64" dyno=web.1 connect=0ms service=161ms status=200 bytes=2555904 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:23:07.138611+00:00 heroku[router]: sock=client at=warning code=H27 desc="Client Request Interrupted" method=GET path="/images/Bloom_Steward_Demo.mp4" host=pinataro.com request_id=ce6619de-3514-8bcc-5c03-493bf6b00c02 fwd="73.65.28.64" dyno=web.1 connect=0ms service=25669ms status=206 bytes=24114315 protocol=http2.0 tls=true tls_version=tls1.3
+2025-08-13T20:56:14.098993+00:00 heroku[web.1]: Idling
+2025-08-13T20:56:14.101519+00:00 heroku[web.1]: State changed from up to down
+2025-08-13T20:56:14.541212+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-08-13T20:56:14.611613+00:00 heroku[web.1]: Process exited with status 143
+2025-08-13T21:04:40.042396+00:00 heroku[web.1]: Unidling
+2025-08-13T21:04:40.096745+00:00 heroku[web.1]: State changed from down to starting
+2025-08-13T21:04:44.252084+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-08-13T21:04:44.855240+00:00 app[web.1]: Serving on port 55462
+2025-08-13T21:04:45.381417+00:00 heroku[web.1]: State changed from starting to up
+2025-08-13T21:04:46.682967+00:00 heroku[router]: at=info method=GET path="/" host=www.pinataro.com request_id=12f12a6e-64ec-ea4a-5386-5db63b83b9b6 fwd="182.44.67.97" dyno=web.1 connect=6641ms service=6ms status=200 bytes=1994 protocol=http1.1 tls=false
