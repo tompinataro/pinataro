@@ -5,7 +5,7 @@ worker_processes 1;
 events { worker_connections 1024; }
 
 http {
-  include       config/mime.types;
+  include       /app/config/mime.types;
   default_type  application/octet-stream;
   sendfile      on;
 
@@ -13,24 +13,24 @@ http {
   error_log  /dev/stderr;
 
   server {
-    listen <%= ENV["PORT"] %>;
+    # Heroku provides PORT at runtime; ERB renders the number here.
+    listen <%= ENV['PORT'] %>;
     server_name _;
 
-    # Serve your static site from /public
+    # Serve the static site from /public
     root /app/public;
     index index.html;
 
-    # Try exact file, then folder index, else 404
+    # Exact file, else 404 (remove extra headers for now)
     location / {
       try_files $uri $uri/ =404;
     }
 
-    # Let browsers range-request the MP4s, etc.
+    # Static assets (optional, but safe)
     location ~* \.(?:mp4|mov|m4v|png|jpg|jpeg|gif|ico|css|js|pdf|vcf)$ {
       try_files $uri =404;
       expires 1h;
       add_header Cache-Control "public";
-      add_header Accept-Ranges bytes;
     }
   }
 }
