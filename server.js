@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const rootDir = path.join(__dirname, '.'); // change to 'public' if your files live there
+const rootDir = path.join(__dirname, 'public');
 app.use(express.static(rootDir));
 app.get('*', (_, res) => res.sendFile(path.join(rootDir, 'index.html')));
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on ${port}`));
+app.listen(port, () => console.log(`Server running on ${port}`));
