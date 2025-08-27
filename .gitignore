@@ -1,3 +1,6 @@
 .DS_Store
 public/.DS_Store
 support/cove-terminal-feed.txt
+# Local SQLite database
+contacts_cards.db
+*.db
