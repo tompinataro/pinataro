@@ -6,10 +6,13 @@ app.use(express.static(rootDir));
 
 // Force download route for assets under /public
 app.get('/dl/*', (req, res) => {
-  const rel = req.params[0] || '';
-  const safePath = path.normalize(path.join(rootDir, rel));
-  // Prevent path traversal outside of public
-  if (!safePath.startsWith(rootDir)) {
+  // More robust extraction of the relative path
+  const rel = decodeURIComponent(req.path.replace(/^\/dl\//, ''));
+  // Resolve against the public root
+  const safePath = path.resolve(rootDir, rel);
+  // Prevent path traversal outside of public (ensure trailing separator)
+  const rootWithSep = rootDir.endsWith(path.sep) ? rootDir : rootDir + path.sep;
+  if (!safePath.startsWith(rootWithSep)) {
     return res.status(400).send('Invalid path');
   }
   res.download(safePath, path.basename(safePath), (err) => {
