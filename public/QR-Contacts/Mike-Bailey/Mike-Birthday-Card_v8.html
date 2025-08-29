@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Belated Birthday Mike!</title>
+  <style>
+    /* Base */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+    .card {
+      width: 480px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+    /* Yellow cover (fallback & enhanced use same rules for true centering) */
+    .card__header,
+    .card__flap {
+      background: #ffd966;
+      padding: 40px 24px;
+      text-align: center;           /* <-- simple, reliable centering */
+      font-size: 1.75rem;
+      font-weight: bold;
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .open-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 6px;
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    /* Hide open button after expand (both fallback and enhanced) */
+    .card.open .open-btn { display: none !important; }
+
+    .card__inside {
+      padding: 16px 24px 28px;
+      line-height: 1.45;
+    }
+    .card__inside img {
+      display: block;
+      margin: 0 auto 12px auto;
+      max-width: 180px;
+      height: auto;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      background: #222;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Enhanced mode: front stays, inside slides down */
+    @supports (transform: translateY(0)) {
+      .card {
+        background: none;
+        box-shadow: none;
+        overflow: visible;
+      }
+      .card__wrap {
+        width: 480px;
+        margin: 0 auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        overflow: hidden;
+        background: #fff;
+      }
+      /* Reuse same centering rules — no flex here to avoid bias */
+      .card__flap { position: relative; z-index: 2; }
+
+      .enhanced-inside {
+        box-sizing: border-box;
+        border-radius: 0 0 12px 12px;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        transform: translateY(-10px);
+        opacity: 0;
+        transition:
+          max-height 0.6s ease-in-out,
+          padding-top 0.6s ease-in-out,
+          padding-bottom 0.6s ease-in-out,
+          transform 0.6s ease-in-out,
+          opacity 0.6s ease-in-out,
+          visibility 0s linear 0.6s;
+      }
+      .card.open .enhanced-inside {
+        max-height: 1200px;
+        visibility: visible;
+        padding-top: 16px;
+        padding-bottom: 28px;
+        transform: translateY(0);
+        opacity: 1;
+        transition:
+          max-height 0.6s ease-in-out,
+          padding-top 0.6s ease-in-out,
+          padding-bottom 0.6s ease-in-out,
+          transform 0.6s ease-in-out,
+          opacity 0.6s ease-in-out,
+          visibility 0s;
+      }
+      /* In enhanced clients, hide fallback header/inside to avoid duplicates */
+      .card__header,
+      .fallback-inside { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" id="birthdayCard">
+    <!-- Static fallback front (non-animated clients) -->
+    <div class="card__header">
+      Happy Belated Birthday Mike!
+      <div class="open-btn" id="fallbackOpen">Open</div>
+    </div>
+
+    <!-- Enhanced layout (animated clients) -->
+    <div class="card__wrap">
+      <div class="card__flap">
+        Happy Belated Birthday Mike!
+        <div class="open-btn">Open</div>
+      </div>
+      <div class="card__inside enhanced-inside">
+        <img src="Mike-Bailey-QR.png" alt="Mike Bailey QR Code" />
+        <p>I made this QR Code for you.<br>(It's safe to download.)</p>
+        <p>When you view it in your camera,<br>
+        it connects to a fully customizable<br>
+        contact page.</p>
+        <p>Let me know what you'd like to<br>
+        add or subtract or change the<br>
+        clickable icons or the picture 😎</p>
+        <p><a class="btn" href="Mike-Bailey-QR.png" download>Download Your QR code</a></p>
+      </div>
+    </div>
+
+    <!-- Fallback inside (non-animated clients) -->
+    <div class="card__inside fallback-inside" style="border-top:1px solid rgba(0,0,0,0.08);">
+      <img src="Mike-Bailey-QR.png" alt="Mike Bailey QR Code" />
+      <p>I made this QR Code for you.<br>(It's safe to download.)</p>
+      <p>When you view it in your camera,<br>
+      it connects to a fully customizable<br>
+      contact page.</p>
+      <p>Let me know what you'd like to<br>
+      add or subtract or change the<br>
+      clickable icons or the picture 😎</p>
+      <p><a class="btn" href="Mike-Bailey-QR.png" download>Download Your QR code</a></p>
+    </div>
+  </div>
+
+  <script>
+    const card = document.getElementById('birthdayCard');
+    const openBtns = card.querySelectorAll('.open-btn');
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        card.classList.add('open');  // also hides the button via CSS
+      });
+    });
+  </script>
+</body>
+</html>
