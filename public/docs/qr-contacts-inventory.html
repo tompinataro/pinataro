@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>QR Contacts Inventory</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 16px; }
+      table { border-collapse: collapse; width: 100%; max-width: 900px; }
+      th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; }
+      th { background: #f6f6f6; }
+      .ok { background: #c6efce; color: #006100; }
+      .missing { background: #ffc7ce; color: #9c0006; }
+      caption { text-align: left; margin-bottom: 10px; font-weight: bold; }
+      .note { margin-top: 12px; color: #555; font-size: 0.95rem; }
+    </style>
+  </head>
+  <body>
+    <caption>Required files by contact (green = present, pink = missing)</caption>
+    <table>
+      <thead>
+        <tr>
+          <th>Folder</th>
+          <th>Contact HTML</th>
+          <th>QR Page HTML</th>
+          <th>QR PNG</th>
+          <th>Headshot Image</th>
+          <th>VCF</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Apollo-Pools</td><td class="ok">OK</td><td class="ok">OK</td><td class="missing">MISSING</td><td class="missing">MISSING</td><td class="ok">OK</td></tr>
+        <tr><td>Charles</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td></tr>
+        <tr><td>Cheri</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td></tr>
+        <tr><td>Christo</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td></tr>
+        <tr><td>Kevin</td><td class="ok">OK</td><td class="ok">OK</td><td class="missing">MISSING</td><td class="missing">MISSING</td><td class="ok">OK</td></tr>
+        <tr><td>Marco</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td></tr>
+        <tr><td>Mike-Bailey</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td><td class="ok">OK</td></tr>
+        <tr><td>TomPinataro</td><td class="ok">OK</td><td class="ok">OK</td><td class="missing">MISSING</td><td class="ok">OK</td><td class="ok">OK</td></tr>
+        <tr><td>aTemplate</td><td class="ok">OK</td><td class="ok">OK</td><td class="missing">MISSING</td><td class="missing">MISSING</td><td class="ok">OK</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      Expected file names (based on current pages):
+      <ul>
+        <li>QR PNG: Apollo-Pools-QR.png, Chuck-QR-Headshot.png, Cheri-QR-photo.png, Christo-QR-photo.png, Kevin-QR.png, Marco-QR.png, Mike-Bailey-QR.png, TomPinataro-QR.png, Template-QR.png</li>
+        <li>Headshot Image: e.g., Chuck.jpeg, Cheri.jpg, Christo.jpg, Marco.jpg, Mike-Bailey.png, IMG_0391.jpg</li>
+        <li>VCF: e.g., Apollo-Pools.vcf, Chuck.vcf, Cheri.vcf, Christo.vcf, Kevin.vcf, Marco.vcf, Mike-Bailey.vcf, TomPinataro.vcf, Template.vcf</li>
+      </ul>
+      Download CSV: <a href="/dl/docs/qr-contacts-inventory.csv">qr-contacts-inventory.csv</a>
+    </div>
+  </body>
+  </html>
+
