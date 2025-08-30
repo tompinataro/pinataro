@@ -56,20 +56,30 @@ def main():
     ap.add_argument('--out', required=True)
     ap.add_argument('--pct', type=int, default=40, help='overlay width as % of QR width')
     ap.add_argument('--border', type=int, default=3, help='white border thickness around circle')
-    ap.add_argument('--height-ratio', type=float, default=1.0, dest='height_ratio', help='oval height/width ratio (1.0=circle)')
+    ap.add_argument('--height-ratio', type=float, default=1.0, dest='height_ratio', help='oval height/width ratio (1.0=circle, <=0 to auto from image)')
+    ap.add_argument('--keep-aspect', action='store_true', help='use headshot original aspect ratio (skip square crop)')
     ap.add_argument('--box-size', type=int, default=10, dest='box_size')
     ap.add_argument('--border-mod', type=int, default=4, dest='border_mod', help='QR quiet-zone modules')
     args = ap.parse_args()
 
     qr = make_qr(args.url, box_size=args.box_size, border=args.border_mod)
     head = Image.open(args.headshot).convert("RGBA")
-    # center-crop to square
-    s = min(head.width, head.height)
-    left = (head.width - s)//2
-    top = (head.height - s)//2
-    head_sq = head.crop((left, top, left+s, top+s))
 
-    out = overlay_oval_center(qr, head_sq, pct=args.pct, border_px=args.border, height_ratio=args.height_ratio)
+    if args.keep_aspect:
+      src = head
+    else:
+      # center-crop to square
+      s = min(head.width, head.height)
+      left = (head.width - s)//2
+      top = (head.height - s)//2
+      src = head.crop((left, top, left+s, top+s))
+
+    hr = args.height_ratio
+    if hr <= 0:
+      # auto height ratio from source image
+      hr = max(1e-3, src.height / float(src.width))
+
+    out = overlay_oval_center(qr, src, pct=args.pct, border_px=args.border, height_ratio=hr)
     out.save(args.out)
     print(f"Wrote {args.out}")
 
