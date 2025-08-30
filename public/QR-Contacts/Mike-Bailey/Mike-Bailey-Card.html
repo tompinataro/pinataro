@@ -175,6 +175,17 @@
         card.classList.add('open');  // also hides the button via CSS
       });
     });
+
+    // Auto-open support: if URL has ?open=1 or #open
+    (function(){
+      try {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('open') || window.location.hash === '#open') {
+          // small delay to allow layout/paint before transition
+          requestAnimationFrame(() => card.classList.add('open'));
+        }
+      } catch (_) { /* noop */ }
+    })();
   </script>
 <script src="../../qr-download.js"></script>
 </body>
