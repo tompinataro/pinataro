@@ -1,6 +1,13 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Fullname
+N:LastName;FirstName;;;
+FN:FirstName LastName
+X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/username
+X-SOCIALPROFILE;TYPE=facebook:https://facebook.com/username
+X-SOCIALPROFILE;TYPE=x:https://x.com/username
+X-SOCIALPROFILE;TYPE=whatsapp:https://wa.me/phonenumber
+X-SOCIALPROFILE;TYPE=linkedin:https://linkedin.com/in/username
+X-SOCIALPROFILE;TYPE=tiktok:https://www.tiktok.com/@username
 TEL;TYPE=CELL:+1-234-567-8910
 EMAIL:FN @ URL.com
 END:VCARD

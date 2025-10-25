@@ -1,6 +1,7 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Fullname
+N:LastName;FirstName;;;
+FN:FirstName LastName
 TEL;TYPE=CELL:+1-234-567-8910
 EMAIL:FN @ URL.com
 END:VCARD
