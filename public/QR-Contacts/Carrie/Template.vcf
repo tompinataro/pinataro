@@ -1,13 +1,12 @@
 BEGIN:VCARD
 VERSION:3.0
-N:LastName;FirstName;;;
-FN:FirstName LastName
+N:Landes;Carrie;
+FN:Carrie Landes
 X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/username
 X-SOCIALPROFILE;TYPE=facebook:https://facebook.com/username
+URL:https://www.cgxprinting.com/
 X-SOCIALPROFILE;TYPE=x:https://x.com/username
-X-SOCIALPROFILE;TYPE=whatsapp:https://wa.me/phonenumber
-X-SOCIALPROFILE;TYPE=linkedin:https://linkedin.com/in/username
 X-SOCIALPROFILE;TYPE=tiktok:https://www.tiktok.com/@username
-TEL;TYPE=CELL:+1-234-567-8910
+TEL;TYPE=CELL:+1-763-439-2040
 EMAIL:FN @ URL.com
 END:VCARD
