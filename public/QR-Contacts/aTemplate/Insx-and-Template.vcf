@@ -12,4 +12,6 @@ X-SOCIALPROFILE;TYPE=youtube:https://www.youtube.com/@username
 TEL;TYPE=CELL:+1-234-567-8910
 EMAIL:FN @ URL.com
 END:VCARD
+
 # https://pinataro.com/QR-Contacts/aTemplate/Template.vcf
+# put:  Git push heroku main in the terminal to deploy the new files.
