@@ -51,7 +51,11 @@ try {
 app.get('/r/:slug', (req, res, next) => {
   const slug = normalizeSlug(req.params.slug);
   const target = redirects[slug];
-  if (!target) return next();
+  if (!target) {
+    console.warn(`[redirects] No target found for slug "${slug}".`);
+    return next();
+  }
+  console.log(`[redirects] Redirecting slug "${slug}" to "${target}".`);
   if (/^https?:\/\//i.test(target)) {
     return res.redirect(302, target);
   }
