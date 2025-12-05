@@ -1,19 +1,22 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Fullname
-TEL;TYPE=CELL:+1-234-567-8910
-EMAIL:email@example.com
-URL:https://www.example.com
-item1.URL;type=pref:https://www.facebook.com/YourHandle
-item1.X-ABLabel:Facebook
-item2.URL:https://www.instagram.com/YourHandle
-item2.X-ABLabel:Instagram
-item3.URL:https://www.linkedin.com/in/YourHandle
-item3.X-ABLabel:LinkedIn
-item4.URL:https://www.twitter.com/YourHandle
-item4.X-ABLabel:Twitter
-item5.URL:https://www.tiktok.com/@YourHandle
-item5.X-ABLabel:TikTok
-item6.URL:https://www.youtube.com/@YourHandle
-item6.X-ABLabel:YouTube
+N:LastName;FirstName;;;
+FN:FirstName LastName
+X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/username
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/username
+X-SOCIALPROFILE;TYPE=facebook:https://facebook.com/username
+URL:https://www.exampleURL.com
+X-SOCIALPROFILE;TYPE=x:https://x.com/username
+X-SOCIALPROFILE;TYPE=tiktok:https://www.tiktok.com/@username
+# X-SOCIALPROFILE;TYPE=youtube:https://www.youtube.com/@username
+TEL;TYPE=CELL:+30 2721 077689
+
+EMAIL:info@thomeastravel.gr
+
 END:VCARD
+
+# https://pinataro.com/QR-Contacts/aTemplate/Template.vcf
+# put:  Git push heroku main in the terminal to deploy the new files.
+
+
+# Address > Stoupa Lefktrou Messinia, Stoupa 240 24
