@@ -173,10 +173,7 @@ img {
 
 .canopi-section {
   padding: 0;
-  background:
-    radial-gradient(circle at 12px 12px, rgba(69, 108, 62, 0.16) 2px, transparent 2px),
-    radial-gradient(circle at 48px 30px, rgba(69, 108, 62, 0.12) 2px, transparent 2px),
-    linear-gradient(180deg, #d7e5a8 0%, var(--canopi-bg) 100%);
+  background: transparent;
 }
 
 .canopi-shell {
