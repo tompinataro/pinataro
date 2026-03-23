@@ -1,12 +1,51 @@
 const header = document.querySelector("[data-site-header]");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const siteNav = document.querySelector("[data-site-nav]");
 
 if (header) {
+  header.dataset.navOpen = "false";
+
   const syncHeaderState = () => {
     header.classList.toggle("is-scrolled", window.scrollY > 10);
   };
 
   syncHeaderState();
   window.addEventListener("scroll", syncHeaderState, { passive: true });
+}
+
+if (header && navToggle && siteNav) {
+  const navLinks = siteNav.querySelectorAll("a");
+
+  const setNavState = (isOpen) => {
+    header.dataset.navOpen = String(isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  setNavState(false);
+
+  navToggle.addEventListener("click", () => {
+    setNavState(header.dataset.navOpen !== "true");
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 760) {
+        setNavState(false);
+      }
+    });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setNavState(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) {
+      setNavState(false);
+    }
+  });
 }
 
 const revealItems = document.querySelectorAll("[data-reveal]");
